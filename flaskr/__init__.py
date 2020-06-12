@@ -32,4 +32,8 @@ def create_app(test_config=None):
     db.init_app(app)
 
     app.register_blueprint(home.bp)
+    app.register_blueprint(about.bp)
+    app.register_blueprint(download.bp)
+    app.register_blueprint(news.bp)
+    app.register_blueprint(other.bp)
     return app
